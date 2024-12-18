@@ -1,0 +1,272 @@
+/* Header and Logo Styling */
+.header {
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    z-index: 3;
+}
+
+.logo {
+    width: 10px; /* Adjust size as needed */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    background: #0f0f0f;
+    color: #fff;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-title .blue {
+    color: #007BFF; /* Blue color */
+    text-transform: uppercase; /* Capitalize the letters */
+}
+
+.hero-title .white {
+    color: #FFFFFF; /* White color */
+    text-transform: lowercase; /* Keep in small letters */
+}
+
+
+.hero-description {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5a5a;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.hero-button:hover {
+    transform: scale(1.1);
+    background-color: #ff3a3a;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.hero-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.floating-element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, #ff5a5a, #ffa65a);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(40px);
+    opacity: 0.8;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(-50%, -50%) translateY(-10px);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(10px);
+    }
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background-color: #0000;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    box-shadow: 2px 0 5px rgba(0,0,0);
+}
+ 
+/* Logo Section */
+.logo-section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.big-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.logo-text {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+/* Header and Navigation Bar */
+.header {
+    position: absolute;
+    top: 35px;
+    left: -100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 3;
+    padding: 0 40px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.nav-bar {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f39c12; /* Highlight color */
+    transform: scale(1.1);
+}
+
+/* Sections Styling */
+section {
+    padding: 50px;
+    background: #f4f4f4;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+section h2 {
+    font-size: 28px;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+}
+
+
+/* Scrolling Section */
+.scrolling-section {
+    width: 100%;
+    overflow: hidden;
+    background: #0000;
+    padding: 50px 0;
+}
+
+.scrolling-content {
+    display: flex;
+    gap: 30px;
+    animation: scroll-horizontal 5s linear infinite;
+    align-items: center;
+}
+
+.scrolling-item {
+    flex: 0 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+.scroll-image {
+    width: 300px; /* Adjust size */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.scroll-image:hover {
+    transform: scale(1.05);
+}
+
+.scroll-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Animation for scrolling */
+@keyframes scroll-horizontal {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
